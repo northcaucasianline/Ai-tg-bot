@@ -1,0 +1,28 @@
+{
+  "name": "telegram-ai-character",
+  "version": "2.3.0",
+  "private": true,
+  "description": "Telegram AI character - single EXE Windows build",
+  "main": "src/index.js",
+  "bin": {
+    "AiTGAida-Anna": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test-chat": "node src/test.js",
+    "login": "node src/login.js",
+    "build:exe": "node build-sea.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "groq-sdk": "^0.37.0",
+    "input": "^1.0.1",
+    "openai": "^7.15.0",
+    "qrcode-terminal": "^0.12.0",
+    "telegram": "^2.26.22"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "postject": "^1.0.0-alpha.6"
+  }
+}
